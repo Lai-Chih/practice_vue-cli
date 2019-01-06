@@ -1,3 +1,6 @@
+demo url: http://lai-chih.com/Demo/demo_vue_practice04/
+
+
 # vueclidemo
 
 > A Vue.js project
@@ -15,4 +18,3 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
