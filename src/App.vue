@@ -80,13 +80,15 @@ export default {
     },
     addRecord(){
       // 值不可為null
-      if(isNaN(this.newRecord.price)){
-        alert('價格請填數字')
-        return false
-      }else if(Object.keys(this.newRecord).length<3){        
+      if(Object.keys(this.newRecord).length<3){
         alert('項目請勿留白')
         return false
+      }else if(isNaN(this.newRecord.price) || this.newRecord.price ==''){
+        this.newRecord.price =''
+        alert('價格請填數字')
+        return false
       }else{
+        console.log(this.newRecord.price)
         this.records.push(this.newRecord)
         this.newRecord ={}
       }
